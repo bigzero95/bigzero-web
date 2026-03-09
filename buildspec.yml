@@ -1,0 +1,15 @@
+
+version: 0.2
+
+phases:
+  build:
+    commands:
+      # S3에 파일 업로드
+      - aws s3 sync . s3://bigzero.cloud --delete --exclude "buildspec.yml" --exclude ".git/*"
+      
+      # CloudFront 캐시 무효화
+      - aws cloudfront create-invalidation --distribution-id E38HPUEK7TSV0C --paths "/*"
+
+artifacts:
+  files:
+    - '**/*'
