@@ -2,11 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>US Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiGZERO | Welcome</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; background-color: #000000; display: flex; align-items: center; justify-content: center; font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif; color: #fff; }
+        .container { text-align: center; max-width: 800px; padding: 20px; }
+        
+        /* JPG 이미지 스타일 */
+        .main-img { width: 100%; max-width: 400px; height: auto; margin-bottom: 30px; border-radius: 8px; }
+        
+        .brand { font-size: 4rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 8px; }
+        .message { font-size: 2rem; font-weight: 600; color: #aaa; }
+    </style>
 </head>
 <body>
-    <h1>🇺🇸 Hello!</h1>
-    <p>You are accessing from the United States.</p>
-    <img src="./us.jpg" alt="미국 이미지">
+    <div class="container">
+        <img src="/image/us.jpg" alt="미국 국기" class="main-img">
+        <h1 class="brand">BiGZERO</h1>
+        <p class="message">Welcome to the page. Glad you're here.</p>
+    </div>
 </body>
 </html>
